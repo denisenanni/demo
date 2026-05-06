@@ -1,0 +1,26 @@
+{
+  "common": {
+    "loading": "Caricamento...",
+    "error": "Qualcosa è andato storto",
+    "back": "Indietro",
+    "save": "Salva",
+    "cancel": "Annulla",
+    "confirm": "Conferma",
+    "delete": "Elimina",
+    "edit": "Modifica",
+    "close": "Chiudi"
+  },
+  "nav": {
+    "logo": "Logo",
+    "home": "Home",
+    "services": "Servizi",
+    "contact": "Contatti"
+  },
+  "hero": {
+    "title": "OSTEOPATIA"
+  },
+  "home": {
+    "subtitle": "Un approccio olistico al benessere",
+    "heading": "Equilibrio Psicofisico Integrato"
+  }
+}
