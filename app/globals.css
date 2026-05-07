@@ -5,4 +5,12 @@
   --color-primary: #2c2a27;
   --color-accent: #8b8a6e;
   --color-hero-overlay: #e8e0d0;
+
+  --font-hero: var(--font-franklin), sans-serif;
+  --font-heading: var(--font-playfair), serif;
+  --font-body: var(--font-inter), sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
 }

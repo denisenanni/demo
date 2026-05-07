@@ -5,14 +5,14 @@ export default function Navbar() {
   const t = useTranslations('nav');
 
   return (
-    <nav className="flex items-center bg-accent px-6 py-4">
+    <nav className="font-body flex items-center bg-accent px-6 py-4">
       <div className="flex-1">
         <div className="size-8 rounded-full bg-black" aria-label={t('logo')} />
       </div>
-      <div className="flex gap-8">
-        <Link href="/">{t('home')}</Link>
-        <Link href="/servizi">{t('services')}</Link>
-        <Link href="/contatti">{t('contact')}</Link>
+      <div className="flex gap-12">
+        <Link href="/" className="text-base font-semibold tracking-widest">{t('home')}</Link>
+        <Link href="/servizi" className="text-base font-semibold tracking-widest">{t('services')}</Link>
+        <Link href="/contatti" className="text-base font-semibold tracking-widest">{t('contact')}</Link>
       </div>
       <div className="flex-1" />
     </nav>
