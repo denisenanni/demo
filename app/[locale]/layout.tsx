@@ -3,7 +3,6 @@ import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import localFont from 'next/font/local';
-import { Playfair_Display, Inter } from 'next/font/google';
 import '../globals.css';
 
 const franklinGothic = localFont({
@@ -11,14 +10,14 @@ const franklinGothic = localFont({
   variable: '--font-franklin',
 });
 
-const playfairDisplay = Playfair_Display({
-  subsets: ['latin'],
-  variable: '--font-playfair',
+const arialNarrow = localFont({
+  src: '../../public/fonts/ArialNarrowRegular.ttf',
+  variable: '--font-arial-narrow',
 });
 
-const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
+const mheiPRC = localFont({
+  src: '../../public/fonts/MHeiPRCMedium.ttf',
+  variable: '--font-mhei',
 });
 
 export function generateStaticParams() {
@@ -41,7 +40,7 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={`${franklinGothic.variable} ${playfairDisplay.variable} ${inter.variable}`}>
+    <html lang={locale} className={`${franklinGothic.variable} ${arialNarrow.variable} ${mheiPRC.variable}`}>
       <body>
         <NextIntlClientProvider messages={messages}>
           {children}

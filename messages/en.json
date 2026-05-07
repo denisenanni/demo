@@ -20,7 +20,13 @@
     "title": "OSTEOPATHY"
   },
   "home": {
-    "subtitle": "A holistic approach to well-being",
+    "subtitle": "Long-lasting well-being for body and mind",
     "heading": "Integrated Psychophysical Balance"
+  },
+  "chiSono": {
+    "title": "Who am I?",
+    "p1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+    "p2": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+    "p3": "Sunt in culpa qui officia deserunt mollit anim id est laborum. Curabitur pretium tincidunt lacus nulla mauris accumsan nulla facilisis."
   }
 }
