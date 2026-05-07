@@ -111,37 +111,44 @@ export default function HomePage() {
           <h2 className="font-hero text-5xl text-primary/80">
             {t("cosaFaccio.title")}
           </h2>
-          <div className="relative flex gap-8 mt-12 justify-center">
-            {[1, 2, 3].map((n) => (
-              <div key={n} className={n === 2 ? "relative flex flex-col items-center" : undefined}>
-                <div className="flex flex-col w-72 overflow-hidden rounded-tl-[40px] rounded-br-[40px]">
-                  <div className="relative w-full aspect-[3/4]">
-                    <Image
-                      src={`/images/cosafaccio${n}.jpg`}
-                      alt=""
-                      fill
-                      className="object-cover"
-                    />
+          <div className="relative">
+            <div className="relative flex gap-8 mt-12 justify-center">
+              {[1, 2, 3].map((n) => (
+                <div key={n} className={n === 2 ? "relative flex flex-col items-center" : undefined}>
+                  <div className="flex flex-col w-72 overflow-hidden rounded-tl-[40px] rounded-br-[40px]">
+                    <div className="relative w-full aspect-[3/4]">
+                      <Image
+                        src={`/images/cosafaccio${n}.jpg`}
+                        alt=""
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    <div className="bg-accent px-5 py-4 flex flex-col items-center gap-2">
+                      <p className="font-mhei text-sm text-primary/70">
+                        {t(`cosaFaccio.card${n}`)}
+                      </p>
+                      <img src="/images/chevrondownicon.svg" alt="" aria-hidden="true" className="w-6 animate-bounce" />
+                    </div>
                   </div>
-                  <div className="bg-accent px-5 py-4 flex flex-col items-center gap-2">
-                    <p className="font-mhei text-sm text-primary/70">
-                      {t(`cosaFaccio.card${n}`)}
-                    </p>
-                    <img src="/images/chevrondownicon.svg" alt="" aria-hidden="true" className="w-6 animate-bounce" />
-                  </div>
+                  {n === 2 && (
+                    <img src="/images/vector.svg" alt="" aria-hidden="true" className="absolute bottom-0 translate-y-full w-10 z-10" />
+                  )}
                 </div>
-                {n === 2 && (
-                  <img src="/images/vector.svg" alt="" aria-hidden="true" className="absolute bottom-0 translate-y-full w-10 z-10" />
-                )}
-              </div>
-            ))}
+              ))}
+            </div>
+            <img
+              src="/images/layer_32.svg"
+              alt=""
+              aria-hidden="true"
+              className="w-[65%] mx-auto"
+            />
+            <div className="absolute bottom-[3%] left-1/2 -translate-x-1/2 translate-y-1/2 z-20 px-20 py-5 bg-accent rounded-full">
+              <span className="font-arial font-semibold tracking-widest text-background uppercase text-4xl">
+                {t("cosaFaccio.cta")}
+              </span>
+            </div>
           </div>
-          <img
-            src="/images/layer_32.svg"
-            alt=""
-            aria-hidden="true"
-            className="w-[65%] mx-auto"
-          />
         </div>
       </section>
     </>
