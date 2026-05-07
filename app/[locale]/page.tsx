@@ -151,6 +151,27 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <section className="w-full bg-accent mt-24 flex items-center px-8 py-4 justify-between">
+        <div className="flex flex-col">
+          <p className="font-mhei text-sm text-dark">{t("footer.tagline")}</p>
+          <p className="font-mhei text-sm text-dark">{t("footer.tagline2")}</p>
+        </div>
+        <div className="flex gap-3">
+          <div className="w-14 h-14 rounded-full bg-dark" />
+          <div className="w-14 h-14 rounded-full bg-dark" />
+          <div className="w-14 h-14 rounded-full bg-dark" />
+        </div>
+      </section>
+
+      <section className="w-full h-[50vh]">
+        <iframe
+          src="https://maps.google.com/maps?q=Milan,Italy&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          className="w-full h-full border-0"
+          loading="lazy"
+          title="Map"
+        />
+      </section>
     </>
   );
 }

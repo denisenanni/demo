@@ -7,6 +7,7 @@
   --color-secondary: #a59594;
   --color-hero-overlay: #e8e0d0;
   --color-light: #f2f2f2;
+  --color-dark: #716562;
 
   --font-hero: var(--font-franklin), sans-serif;
   --font-body: var(--font-arial-narrow), sans-serif;

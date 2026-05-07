@@ -23,6 +23,10 @@
     "subtitle": "Benessere duraturo per corpo e mente",
     "heading": "Equilibrio Psicofisico Integrato"
   },
+  "footer": {
+    "tagline": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "tagline2": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
   "cosaFaccio": {
     "title": "Cosa faccio?",
     "cta": "CONTATTAMI",

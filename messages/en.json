@@ -23,6 +23,10 @@
     "subtitle": "Long-lasting well-being for body and mind",
     "heading": "Integrated Psychophysical Balance"
   },
+  "footer": {
+    "tagline": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "tagline2": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
   "cosaFaccio": {
     "title": "What do I do?",
     "cta": "CONTACT ME",
