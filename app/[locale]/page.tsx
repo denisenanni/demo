@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 
 export default function HomePage() {
@@ -9,8 +10,14 @@ export default function HomePage() {
       <Navbar />
 
       <section className="relative w-full">
-        {/* Hero image placeholder — swap with <Image> once asset is available */}
-        <div className="w-full aspect-[16/9]" />
+        <Image
+          src="/images/hero.jpg"
+          alt={t('hero.title')}
+          width={1920}
+          height={1080}
+          className="w-full h-auto"
+          priority
+        />
 
         <div className="absolute inset-0 flex flex-col items-center justify-center gap-4">
           <h1>{t('hero.title')}</h1>
