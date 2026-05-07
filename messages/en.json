@@ -23,6 +23,12 @@
     "subtitle": "Long-lasting well-being for body and mind",
     "heading": "Integrated Psychophysical Balance"
   },
+  "cosaFaccio": {
+    "title": "What do I do?",
+    "card1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "card2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "card3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
   "chiSono": {
     "title": "Who am I?",
     "p1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",

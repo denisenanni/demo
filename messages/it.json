@@ -23,6 +23,12 @@
     "subtitle": "Benessere duraturo per corpo e mente",
     "heading": "Equilibrio Psicofisico Integrato"
   },
+  "cosaFaccio": {
+    "title": "Cosa faccio?",
+    "card1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "card2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "card3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
   "chiSono": {
     "title": "Chi sono?",
     "p1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquip ex ea commodo consequat.",

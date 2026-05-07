@@ -31,8 +31,18 @@ export default function HomePage() {
       </section>
 
       <section className="relative overflow-hidden bg-background min-h-[70vh] flex items-start justify-center">
-        <img src="/images/deco_0.svg" alt="" aria-hidden="true" className="absolute top-0 left-0 z-0 w-[25%]" />
-        <img src="/images/deco_1.svg" alt="" aria-hidden="true" className="absolute top-0 right-0 z-0 w-[65%]" />
+        <img
+          src="/images/deco_0.svg"
+          alt=""
+          aria-hidden="true"
+          className="absolute top-0 left-0 z-0 w-[25%]"
+        />
+        <img
+          src="/images/deco_1.svg"
+          alt=""
+          aria-hidden="true"
+          className="absolute top-0 right-0 z-0 w-[65%]"
+        />
 
         <div className="relative z-10 w-full px-8 pt-12 pb-16 flex flex-col items-center">
           <div className="w-full max-w-6xl text-center mb-12">
@@ -84,7 +94,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="relative min-h-[80vh] flex flex-col items-center justify-center py-20">
+      <section className="relative min-h-[80vh] flex flex-col items-center justify-start pt-16 z-20">
         <img
           src="/images/deco_2.svg"
           alt=""
@@ -95,8 +105,44 @@ export default function HomePage() {
           src="/images/logo_sfondo.svg"
           alt=""
           aria-hidden="true"
-          className="absolute w-[50%] opacity-40"
+          className="absolute top-0 left-1/2 w-[60%] -translate-x-1/2 -translate-y-[35%] opacity-40"
         />
+        <div className="relative z-10 w-full max-w-6xl px-8 text-center">
+          <h2 className="font-hero text-5xl text-primary/80">
+            {t("cosaFaccio.title")}
+          </h2>
+          <div className="relative flex gap-8 mt-12 justify-center">
+            {[1, 2, 3].map((n) => (
+              <div key={n} className={n === 2 ? "relative flex flex-col items-center" : undefined}>
+                <div className="flex flex-col w-72 overflow-hidden rounded-tl-[40px] rounded-br-[40px]">
+                  <div className="relative w-full aspect-[3/4]">
+                    <Image
+                      src={`/images/cosafaccio${n}.jpg`}
+                      alt=""
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="bg-accent px-5 py-4 flex flex-col items-center gap-2">
+                    <p className="font-mhei text-sm text-primary/70">
+                      {t(`cosaFaccio.card${n}`)}
+                    </p>
+                    <img src="/images/chevrondownicon.svg" alt="" aria-hidden="true" className="w-6 animate-bounce" />
+                  </div>
+                </div>
+                {n === 2 && (
+                  <img src="/images/vector.svg" alt="" aria-hidden="true" className="absolute bottom-0 translate-y-full w-10 z-10" />
+                )}
+              </div>
+            ))}
+          </div>
+          <img
+            src="/images/layer_32.svg"
+            alt=""
+            aria-hidden="true"
+            className="w-[65%] mx-auto"
+          />
+        </div>
       </section>
     </>
   );
