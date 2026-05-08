@@ -52,7 +52,7 @@ export default function HomePage() {
             <h2 className="font-hero text-5xl text-primary mt-6">
               {t("home.heading")}
             </h2>
-            <p className="font-mhei mt-6">
+            <p className="font-mhei text-lg mt-6">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris.
@@ -64,19 +64,19 @@ export default function HomePage() {
               <h2 className="font-hero text-5xl text-primary/80">
                 {t("chiSono.title")}
               </h2>
-              <p className="font-mhei mt-6 text-primary/70">
+              <p className="font-mhei text-lg mt-6 text-primary/70">
                 {t("chiSono.p1")}
               </p>
-              <p className="font-mhei mt-4 text-primary/70">
+              <p className="font-mhei text-lg mt-4 text-primary/70">
                 {t("chiSono.p2")}
               </p>
-              <p className="font-mhei mt-4 text-primary/70">
+              <p className="font-mhei text-lg mt-4 text-primary/70">
                 {t("chiSono.p3")}
               </p>
-              <p className="font-mhei mt-4 text-primary/70">
+              <p className="font-mhei text-lg mt-4 text-primary/70">
                 {t("chiSono.p4")}
               </p>
-              <p className="font-mhei mt-4 text-primary/70">
+              <p className="font-mhei text-lg mt-4 text-primary/70">
                 {t("chiSono.p5")}
               </p>
             </div>
