@@ -80,7 +80,7 @@ export default function HomePage() {
                 {t("chiSono.p5")}
               </p>
             </div>
-            <div className="relative w-1/2 shrink-0 aspect-square [filter:drop-shadow(-18px_18px_35px_rgba(0,0,0,0.8))]">
+            <div className="relative w-1/2 shrink-0 aspect-square [filter:drop-shadow(-25px_0px_6px_rgba(0,0,0,0.5))_drop-shadow(0px_25px_8px_rgba(0,0,0,0.9))]">
               <div className="absolute inset-0 rounded-[30px] overflow-hidden">
                 <Image
                   src="/images/chisono.jpg"
@@ -105,7 +105,7 @@ export default function HomePage() {
           src="/images/logo_sfondo.svg"
           alt=""
           aria-hidden="true"
-          className="absolute top-0 left-1/2 w-[60%] -translate-x-1/2 -translate-y-[35%] opacity-40"
+          className="absolute top-0 left-1/2 w-[70%] -translate-x-1/2 -translate-y-[15%] opacity-40"
         />
         <div className="relative z-10 w-full max-w-6xl px-8 text-center">
           <h2 className="font-hero text-5xl text-primary/80">
@@ -114,7 +114,12 @@ export default function HomePage() {
           <div className="relative">
             <div className="relative flex gap-8 mt-12 justify-center">
               {[1, 2, 3].map((n) => (
-                <div key={n} className={n === 2 ? "relative flex flex-col items-center" : undefined}>
+                <div
+                  key={n}
+                  className={
+                    n === 2 ? "relative flex flex-col items-center" : undefined
+                  }
+                >
                   <div className="flex flex-col w-72 overflow-hidden rounded-tl-[40px] rounded-br-[40px]">
                     <div className="relative w-full aspect-[3/4]">
                       <Image
@@ -128,11 +133,21 @@ export default function HomePage() {
                       <p className="font-mhei text-sm text-primary/70">
                         {t(`cosaFaccio.card${n}`)}
                       </p>
-                      <img src="/images/chevrondownicon.svg" alt="" aria-hidden="true" className="w-6 animate-bounce" />
+                      <img
+                        src="/images/chevrondownicon.svg"
+                        alt=""
+                        aria-hidden="true"
+                        className="w-6 animate-bounce"
+                      />
                     </div>
                   </div>
                   {n === 2 && (
-                    <img src="/images/vector.svg" alt="" aria-hidden="true" className="absolute bottom-0 translate-y-full w-10 z-10" />
+                    <img
+                      src="/images/vector.svg"
+                      alt=""
+                      aria-hidden="true"
+                      className="absolute bottom-0 translate-y-full w-10 z-10"
+                    />
                   )}
                 </div>
               ))}
