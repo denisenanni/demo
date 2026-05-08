@@ -35,13 +35,13 @@ export default function HomePage() {
           src="/images/deco_0.svg"
           alt=""
           aria-hidden="true"
-          className="absolute top-0 left-0 z-0 w-[25%]"
+          className="absolute -top-8 left-0 z-0 w-[25%]"
         />
         <img
           src="/images/deco_1.svg"
           alt=""
           aria-hidden="true"
-          className="absolute top-0 right-0 z-0 w-[65%]"
+          className="absolute -top-8 right-0 z-0 w-[65%]"
         />
 
         <div className="relative z-10 w-full px-8 pt-12 pb-16 flex flex-col items-center">
@@ -80,7 +80,7 @@ export default function HomePage() {
                 {t("chiSono.p5")}
               </p>
             </div>
-            <div className="relative w-1/2 shrink-0 aspect-square [filter:drop-shadow(-25px_0px_6px_rgba(0,0,0,0.5))_drop-shadow(0px_25px_8px_rgba(0,0,0,0.9))]">
+            <div className="relative w-1/2 shrink-0 aspect-square [filter:drop-shadow(-12px_12px_24px_rgba(0,0,0,0.4))]">
               <div className="absolute inset-0 rounded-[30px] overflow-hidden">
                 <Image
                   src="/images/chisono.jpg"
@@ -107,20 +107,22 @@ export default function HomePage() {
           aria-hidden="true"
           className="absolute top-40 left-1/2 w-[70%] -translate-x-1/2 -translate-y-[15%] opacity-40"
         />
-        <div className="relative z-10 w-full max-w-6xl px-8 text-center">
+        <div className="relative z-10 w-[90%] text-center">
           <h2 className="font-hero text-5xl text-primary/80">
             {t("cosaFaccio.title")}
           </h2>
           <div className="relative">
-            <div className="relative flex gap-8 mt-12 justify-center">
+            <div className="relative flex mt-12 justify-between">
               {[1, 2, 3].map((n) => (
                 <div
                   key={n}
                   className={
-                    n === 2 ? "relative flex flex-col items-center" : undefined
+                    n === 2
+                      ? "relative w-[28%] flex flex-col items-center"
+                      : "w-[28%]"
                   }
                 >
-                  <div className="flex flex-col w-72 overflow-hidden rounded-tl-[40px] rounded-br-[40px]">
+                  <div className="flex flex-col w-full overflow-hidden rounded-tl-[40px] rounded-br-[40px] [filter:drop-shadow(-12px_12px_24px_rgba(0,0,0,0.7))]">
                     <div className="relative w-full aspect-[3/4]">
                       <Image
                         src={`/images/cosafaccio${n}.jpg`}
@@ -146,7 +148,7 @@ export default function HomePage() {
                       src="/images/vector.svg"
                       alt=""
                       aria-hidden="true"
-                      className="absolute bottom-0 translate-y-full w-10 z-10"
+                      className="absolute bottom-0 translate-y-full w-14 z-10"
                     />
                   )}
                 </div>
@@ -156,7 +158,7 @@ export default function HomePage() {
               src="/images/layer_32.svg"
               alt=""
               aria-hidden="true"
-              className="w-[65%] mx-auto"
+              className="w-[75%] mx-auto"
             />
             <div className="absolute bottom-[3%] left-1/2 -translate-x-1/2 translate-y-1/2 z-20 px-20 py-5 bg-accent rounded-full">
               <span className="font-arial font-semibold tracking-widest text-background uppercase text-4xl">
