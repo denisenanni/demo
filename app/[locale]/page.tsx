@@ -105,7 +105,7 @@ export default function HomePage() {
           src="/images/logo_sfondo.svg"
           alt=""
           aria-hidden="true"
-          className="absolute top-0 left-1/2 w-[70%] -translate-x-1/2 -translate-y-[15%] opacity-40"
+          className="absolute top-40 left-1/2 w-[70%] -translate-x-1/2 -translate-y-[15%] opacity-40"
         />
         <div className="relative z-10 w-full max-w-6xl px-8 text-center">
           <h2 className="font-hero text-5xl text-primary/80">
